@@ -1,13 +1,18 @@
 <script lang="ts">
+  import { load_images } from "$lib/utils.svelte";
+  const images = load_images("pictures/home");
 </script>
 
 <div class="title-div">
-  <h1 class="title">S²OUTH</h1>
-  
-  <p class="subtitle">
-  <b>S</b>tudent’s <b>S</b>ub-<b>O</b>rbital
-  <b>U</b>nified <b>T</b>elemetry <b>H</b>andler
-  </p>
+  <div class="bg-title-div" style:background-image="url({images.AssemblyCAD})"></div>
+  <div class="text-title-div">
+    <h1 class="title">S²OUTH</h1>
+    
+    <p class="subtitle">
+    <b>S</b>tudent’s <b>S</b>ub-<b>O</b>rbital
+    <b>U</b>nified <b>T</b>elemetry <b>H</b>andler
+    </p>
+  </div>
 </div>
 
 <div class="content-div">
@@ -32,6 +37,8 @@
     More details can be found on the <a href="/north">N₂ORTH</a> page.
   </p>
 
+  <img loading="lazy" src={images.FullAssembly} class="image" alt="integrated assembly">
+  
   <br>
   <h2>Capabilities</h2>
   
@@ -55,6 +62,8 @@
     a magnetometer, a barometer and a connection to the <i>DLR Phoenix</i> GPS receiver.
     Each sensor board also contains a MCU for pose estimation.
   </p>
+
+  <img loading="lazy" src={images.UpperSensor} class="image" alt="Upper sensor boards">
   
   <br>
   <h3>Telemetry downlink</h3>
@@ -64,7 +73,7 @@
     guarantees a stable connection throughout the entire flight.
   </p>
   
-  <!-- <figure class="wp-block-image size-large"><img decoding="async" width="2560" height="2560" src="https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-scaled.jpg" alt="" class="wp-image-125" srcset="https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-scaled.jpg 2560w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-300x300.jpg 300w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-1024x1024.jpg 1024w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-150x150.jpg 150w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-768x768.jpg 768w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-1536x1536.jpg 1536w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/RocketLST-edited-2048x2048.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px"></figure> -->
+  <img loading="lazy" src={images.RocketLST} class="image" alt="RocketLST">
   
   <br>
   <h3>Power supply</h3>
@@ -77,7 +86,7 @@
     measurements exceed specifications.
   </p>
   
-  <!-- <figure class="wp-block-image size-large"><img decoding="async" width="2560" height="2560" src="https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-scaled.jpg" alt="" class="wp-image-124" srcset="https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-scaled.jpg 2560w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-300x300.jpg 300w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-1024x1024.jpg 1024w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-150x150.jpg 150w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-768x768.jpg 768w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-1536x1536.jpg 1536w, https://south.wuespace.de/wp-content/uploads/sites/5/2025/10/EPS-edited-2048x2048.jpg 2048w" sizes="(max-width: 2560px) 100vw, 2560px"></figure> -->
+  <img loading="lazy" src={images.EPS} class="image" alt="EPS">
   
   <br>
   <h3>RocketHD</h3>
@@ -89,6 +98,8 @@
     as four amplifiers and patch antennas we hope to receive high definition video
     live from space.
   </p>
+  
+  <img loading="lazy" src={images.RocketHD} class="image" alt="RocketHD">
   
   <br>
   <h3>Groundstation</h3>
@@ -105,18 +116,32 @@
       Read the documentation to learn more
     </a>
   </div>
-  <br>
-  <br>
 </div>
 
 <style>
 
   .title-div {
-    width: min(50rem, 90%);
-    height: 100%;
+    display: grid;
+    width: 100%;
+    height: 25rem;
     margin: auto;
+  }
+  .bg-title-div {
+    filter: contrast(0.5) brightness(0.9);
+    background-size: cover;
+    background-position: center;
+    
+    z-index: 0;
+    grid-area: 1/1;
+  }
+  .text-title-div {
+    width: min(50rem, 90%);
     text-align: center;
     justify-content: center;
+    margin: auto;
+
+    z-index: 1;
+    grid-area: 1/1;
   }
 
   .content-div {
@@ -126,10 +151,15 @@
     justify-content: center;
   }
   .title {
-    font-size: 400%;
+    font-size: 500%;
   }
   .subtitle {
-    font-size: 150%;
+    font-size: 300%;
+  }
+  .image {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 100%;
   }
 
   a {
@@ -137,12 +167,11 @@
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0 100%;
-    background-size: 0% 1px;
+    background-size: 0% 0.1rem;
     background-repeat: no-repeat;
     transition: background-size 0.25s ease;
   }
-  
   a:hover, a:focus-visible {
-    background-size: 100% 1px;
+    background-size: 100% 0.1rem;
   }
 </style>

@@ -7,9 +7,6 @@
 <div class="container">
   <hr style:height="0.1rem" />
 
-  <a href="https://wuespace.de">
-    <img src={logo} style:width=20rem alt="wuespace logo">
-  </a>
   <div class="external-links">
     <a href="https://github.com/S2outh">
       <img src={git} style:width=3rem alt="git logo">
@@ -18,6 +15,13 @@
       <img src={instagram} style:width=3rem alt="instagram logo">
     </a>
   </div>
+  <a href="https://wuespace.de">
+    <img src={logo} style:width=20rem alt="wuespace logo">
+  </a>
+
+  <hr style:height="0.1rem" />
+  <br/>
+  <br/>
 </div>
 
 <style>

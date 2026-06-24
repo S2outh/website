@@ -1,1 +1,61 @@
-<h1>north</h1>
+<script lang="ts">
+  import { load_images } from "$lib/utils.svelte";
+  const images = load_images("pictures/north");
+</script>
+
+<div class="title-div">
+  <h1 class="title">N₂ORTH</h1>
+</div>
+
+<div class="content-div">
+  <img loading="lazy" src={images.North} class="image" alt="north rocket">
+  <p>
+    <i>N₂ORTH</i> is a student build hybrid engine rocket developed by the team of
+    <i>HyEnD</i> e. V. in Stuttgart. It’s main engine, <i>HyLIGHT</i> provides up to
+    <i>15 kN</i> of thrust and runs on nitrous oxide as well as an in-house developed
+    solid rocket fuel. <i>N₂ORTH</i> already launched twice in April of 2023, reaching
+    an apogee of <i>64.4 km</i>. This time we aim for a lot higher,
+    with optimistic estimates going up to <i>150 km</i>.
+    Learn more about <i>N₂ORTH</i> on the
+    <a href="https://hyend.de/index.php/dlr-stern-participation/">
+      <i>official HyEnD website</i>
+    </a>.
+  </p>
+</div>
+
+<style>
+
+  .title-div {
+    width: min(50rem, 90%);
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content-div {
+    width: min(50rem, 90%);
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+  .title {
+    font-size: 400%;
+  }
+  .image {
+    width: 100%;
+  }
+
+  a {
+    color: lightblue;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-size: 0% 0.1rem;
+    background-repeat: no-repeat;
+    transition: background-size 0.25s ease;
+  }
+  a:hover, a:focus-visible {
+    background-size: 100% 0.1rem;
+  }
+</style>

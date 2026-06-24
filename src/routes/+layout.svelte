@@ -20,7 +20,12 @@
   </MobileNavBar>
 {/if}
 
+<br/>
+
 {@render children()}
+
+<br/>
+<br/>
 
 <Footer />
 
