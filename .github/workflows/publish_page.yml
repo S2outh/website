@@ -60,7 +60,7 @@ jobs:
           export CONTAINERS_REGISTRIES_CONF="$RUNNER_TEMP/registries.conf"
           : > "$CONTAINERS_REGISTRIES_CONF"
           IMAGE="ghcr.io/${GITHUB_REPOSITORY,,}"
-          nix run nixpkgs#skopeo -- copy --insecure-policy \
+          nix run .#skopeo -- copy --insecure-policy \
             docker-archive:result "docker://${IMAGE}:latest"
-          nix run nixpkgs#skopeo -- copy --insecure-policy \
+          nix run .#skopeo -- copy --insecure-policy \
             docker-archive:result "docker://${IMAGE}:${GITHUB_SHA}"
