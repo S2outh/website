@@ -24,7 +24,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install Nix
         uses: NixOS/nix-installer-action@main
@@ -41,7 +41,7 @@ jobs:
         run: nix build .#container --print-build-logs
 
       - name: Log in to GHCR
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
