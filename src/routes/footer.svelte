@@ -20,8 +20,6 @@
   </a>
 
   <hr style:height="0.1rem" />
-  <br/>
-  <br/>
 </div>
 
 <style>
@@ -33,7 +31,7 @@
   .container {
     width: min(30rem, 90%);
     height: 100%;
-    margin: auto;
+    margin: 3rem auto;
     text-align: center;
     justify-content: center;
   }

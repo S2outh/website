@@ -40,7 +40,7 @@
     justify-content: center;
   }
   .title {
-    font-size: 400%;
+    font-size: 300%;
   }
   .image {
     object-fit: cover;

@@ -42,14 +42,12 @@
 
   <enhanced:img loading="lazy" src="$lib/assets/pictures/home/FullAssembly.jpg" class="image" alt="integrated assembly" />
   
-  <br>
   <h2>Capabilities</h2>
   
   <p>
     The <i>S²OUTH</i> project is designed to provide the following capabilities:
   </p>
   
-  <br>
   <h3>Distributed system</h3>
   
   <p>
@@ -57,7 +55,6 @@
     CAN busses to ensure that no single component failure causes the entire system to fail.
   </p>
   
-  <br>
   <h3>Sensor board</h3>
   
   <p>
@@ -68,7 +65,6 @@
 
   <enhanced:img loading="lazy" src="$lib/assets/pictures/home/UpperSensor.jpg" class="image" alt="Upper sensor boards" />
   
-  <br>
   <h3>Telemetry downlink</h3>
   
   <p>
@@ -78,7 +74,6 @@
   
   <enhanced:img loading="lazy" src="$lib/assets/pictures/home/RocketLST.png" class="image" alt="RocketLST" />
   
-  <br>
   <h3>Power supply</h3>
   
   <p>
@@ -91,7 +86,6 @@
   
   <enhanced:img loading="lazy" src="$lib/assets/pictures/home/EPS.png" class="image" alt="EPS" />
   
-  <br>
   <h3>RocketHD</h3>
   
   <p>
@@ -104,7 +98,6 @@
   
   <enhanced:img loading="lazy" src="$lib/assets/pictures/home/RocketHD.png" class="image" alt="RocketHD" />
   
-  <br>
   <h3>Groundstation</h3>
   
   <p>
@@ -153,16 +146,19 @@
   }
 
   .content-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
     width: min(50rem, 90%);
     height: 100%;
     margin: auto;
-    justify-content: center;
   }
   .title {
-    font-size: 500%;
+    font-size: 440%;
   }
   .subtitle {
-    font-size: 300%;
+    font-size: 200%;
   }
   .image {
     object-fit: cover;

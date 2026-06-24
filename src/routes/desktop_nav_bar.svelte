@@ -16,7 +16,7 @@
 <style>
 
   h1 {
-    font-size: 180%;
+    font-size: 140%;
   }
   nav {
     height: 4%;

@@ -11,7 +11,7 @@
 </div>
 
 <div class="content-div">
-  <enhanced:img loading="lazy" src="$lib/assets/pictures/north/North.png" class="image" alt="north rocket" />
+  <enhanced:img loading="lazy" src="$lib/assets/pictures/north/North.jpg" class="image" alt="north rocket" />
   <p>
     <i>N₂ORTH</i> is a student build hybrid engine rocket developed by the team of
     <i>HyEnD</i> e. V. in Stuttgart. It’s main engine, <i>HyLIGHT</i> provides up to
@@ -29,7 +29,7 @@
 <style>
 
   .title-div {
-    width: min(50rem, 90%);
+    width: 100%;
     height: 100%;
     margin: auto;
     text-align: center;
@@ -43,7 +43,7 @@
     justify-content: center;
   }
   .title {
-    font-size: 400%;
+    font-size: 300%;
   }
   .image {
     width: 100%;

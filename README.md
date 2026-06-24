@@ -63,13 +63,11 @@ image** — there's no need to add huge originals. Oversized sources blow up bot
 the dev-server transform time and the build (`sharp` re-encodes every variant).
 
 Before committing a new photo, downscale it and bake in its rotation. Cap the
-hero (`AssemblyCAD`) at ~2000px and other images at ~1600px on the longest side:
+images at ~2560px:
 
 ```sh
 # other images
-mogrify -auto-orient -strip -resize '1600x1600>' path/to/image.jpg
-# hero / full-bleed background
-mogrify -auto-orient -strip -resize '2000x2000>' path/to/hero.png
+mogrify -auto-orient -strip -resize '2560x2560>' 
 ```
 
 - `-auto-orient` rotates the pixels to match the photo's EXIF orientation —

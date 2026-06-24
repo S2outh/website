@@ -20,20 +20,25 @@
   </MobileNavBar>
 {/if}
 
-<br/>
-
-{@render children()}
-
-<br/>
-<br/>
+<div class="main">
+  {@render children()}
+</div>
 
 <Footer />
 
 <style>
+  .main {
+    padding: 1.5rem 0;
+  }
+
   :global(html),
   :global(body) {
+    /* Solid fallback */
+    background-color: #0D2D59;
+    /* Gradient as main bg */
     background-image: linear-gradient(to bottom right, #292929, #0D2D59);
     background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   @font-face {
     font-family: 'Roboto';
@@ -75,10 +80,13 @@
     font-display: swap;
   }
 
+  :global(p) {
+    font-size: 130%;
+    color: white;
+  }
   :global(p),
   :global(a) {
     font-family: 'Roboto', sans-serif;
-    color: white;
   }
 
   :global(h1),
@@ -87,6 +95,7 @@
   :global(h4),
   :global(h5),
   :global(h6) {
+    font-size: 160%;
     font-family: 'Chakra Petch', sans-serif;
     color: white;
   }

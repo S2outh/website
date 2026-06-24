@@ -36,11 +36,11 @@
 <style>
 
   h1 {
-    font-size: 180%;
+    font-size: 140%;
   }
   nav {
     height: 4%;
-    padding: 0 4rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
   }
