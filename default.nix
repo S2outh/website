@@ -17,6 +17,8 @@ in
 bun2nix.writeBunApplication {
   packageJson = ./package.json;
 
+  src = ./.;
+
   buildPhase = ''
     bun run build
   '';
