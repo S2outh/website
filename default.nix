@@ -1,5 +1,6 @@
 {
   bun2nix,
+  system,
   runCommand,
   stdenv,
   lib,
@@ -10,7 +11,9 @@ let
   # sync. bun2nix is a pure transformation here — bun.lock already contains
   # integrity hashes for every dependency, so no network access is needed.
   # This uses import-from-derivation: evaluation pauses until bun.nix is built.
-  bunNix = runCommand "bun.nix" { nativeBuildInputs = [ bun2nix ]; } ''
+  bunNix = runCommand "bun.nix" {
+    nativeBuildInputs = [ bun2nix ];
+  } ''
     bun2nix -l ${./bun.lock} -o $out
   '';
 in

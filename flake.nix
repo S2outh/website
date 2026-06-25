@@ -2,16 +2,9 @@
   description = "Bun2nix flake";
 
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-
     bun2nix.url = "github:nix-community/bun2nix?ref=2.1.0";
-
-    # Follow bun2nix's pinned nixpkgs (instead of our own nixos-unstable) so the
-    # overlay's `pkgs.bun2nix` matches the binary prebuilt by nix-community and
-    # is substituted from their cache rather than compiled from source (~5min).
-    # Trade-off: our whole build now tracks bun2nix's nixpkgs; bump it by
-    # updating the bun2nix input.
-    nixpkgs.follows = "bun2nix/nixpkgs";
   };
 
   outputs = { self, nixpkgs, flake-utils, bun2nix }:
@@ -19,14 +12,13 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [
-            bun2nix.overlays.default
-          ];
         };
 
-        inherit (pkgs) lib;
+        lib = pkgs.lib;
 
-        package = pkgs.callPackage ./default.nix { };
+        package = pkgs.callPackage ./default.nix {
+          bun2nix = bun2nix.packages.${system}.default;
+        };
       in
       {
         devShells.default =

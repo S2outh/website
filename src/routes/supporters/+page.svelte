@@ -39,7 +39,8 @@
     border-radius: 1rem;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    align-items: center;
     gap: 4rem;
   }
   .logo {
