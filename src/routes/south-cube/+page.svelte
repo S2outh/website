@@ -14,7 +14,6 @@
   <enhanced:img
     loading="lazy"
     src="$lib/assets/pictures/south_cube/CubeBP.png"
-    style:filter="invert(1)"
     class="image"
     alt="cube"
   />

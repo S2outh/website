@@ -88,6 +88,11 @@ p {
   color: var(--color-text);
 }
 
+/* Alt text shown before/if an image loads */
+img {
+  color: var(--color-text);
+}
+
 h1,
 h2,
 h3,
