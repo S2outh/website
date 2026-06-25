@@ -1,13 +1,13 @@
 <script lang="ts">
-  import { slide } from "svelte/transition";
-  import logo from "$lib/assets/south-logo.svg";
+  import { slide } from 'svelte/transition';
+  import logo from '$lib/assets/south-logo.svg';
   let menu_active = $state(false);
   let { children } = $props();
 </script>
 
 <nav>
   <a class="horizontal-flex" href="/">
-    <img src={logo} style:width=4rem style:margin=0.2rem alt="south logo">
+    <img src={logo} style:width="4rem" style:margin="0.2rem" alt="south logo" />
     <h1>S²OUTH</h1>
   </a>
   <button
@@ -17,7 +17,8 @@
     type="button"
     onclick={() => {
       menu_active = !menu_active;
-    }}>
+    }}
+  >
     <svg width="3rem" height="3rem" viewBox="0 0 100 100">
       <rect class="btn btn-top" class:active={menu_active} x="5" y="0" />
       <rect class="btn btn-mid" class:active={menu_active} x="5" y="40" />
@@ -34,7 +35,6 @@
 {/if}
 
 <style>
-
   h1 {
     font-size: 200%;
   }
@@ -67,7 +67,9 @@
     rx: 5%;
   }
   .btn-top {
-    transition: transform 0.25s ease, width 0.25s ease;
+    transition:
+      transform 0.25s ease,
+      width 0.25s ease;
   }
   .btn-top.active {
     transform: rotate(45deg);
@@ -80,7 +82,9 @@
     fill: transparent;
   }
   .btn-btm {
-    transition: transform 0.25s ease, width 0.25s ease;
+    transition:
+      transform 0.25s ease,
+      width 0.25s ease;
   }
   .btn-btm.active {
     transform: rotate(-45deg);

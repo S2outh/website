@@ -11,17 +11,18 @@
 </div>
 
 <div class="content-div">
-  <h2>
-    This project is only possible due to support from these organizations:
-  </h2>
+  <h2>This project is only possible due to support from these organizations:</h2>
   <div class="logo-grid">
     <enhanced:img src="$lib/assets/supporters/aisler_logo.png" class="logo" alt="aisler logo" />
-    <enhanced:img src="$lib/assets/supporters/sparkasse_logo.png" class="logo" alt="sparkasse logo" />
+    <enhanced:img
+      src="$lib/assets/supporters/sparkasse_logo.png"
+      class="logo"
+      alt="sparkasse logo"
+    />
   </div>
 </div>
 
 <style>
-
   /* .content-div base and .title are defined in src/app.css */
   .title-div {
     width: min(50rem, 90%);

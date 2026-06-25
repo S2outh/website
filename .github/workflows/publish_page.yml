@@ -4,7 +4,7 @@ name: Build and publish container image
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ['main']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,7 +17,7 @@ permissions:
 # Allow only one concurrent publish, skipping runs queued between the run
 # in-progress and the latest queued.
 concurrency:
-  group: "container"
+  group: 'container'
   cancel-in-progress: false
 
 jobs:

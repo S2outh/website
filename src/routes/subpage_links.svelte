@@ -1,4 +1,3 @@
-
 <a href="/">Home</a>
 <a href="/supporters">Supporters</a>
 <a href="/south-cube">South-Cube</a>

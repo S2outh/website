@@ -9,11 +9,7 @@
   --color-bg-start: #292929;
   --color-bg-end: #0d2d59;
   --color-bg-fallback: #0d2d59;
-  --gradient-bg: linear-gradient(
-    to bottom right,
-    var(--color-bg-start),
-    var(--color-bg-end)
-  );
+  --gradient-bg: linear-gradient(to bottom right, var(--color-bg-start), var(--color-bg-end));
 
   /* Text */
   --color-text: #ffffff;

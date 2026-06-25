@@ -6,8 +6,8 @@ The website for **S²OUTH** — the **S**tudent's **S**ub-**O**rbital **U**nifie
 S²OUTH is a modern, reliable telemetry system that provides live telemetry —
 sensor data and high-precision pose estimation — for the full duration of a
 suborbital spaceshot flight, plus a secondary high-bandwidth RF link for live
-HD video. The site presents the project, its flight-proven *South Cube*
-predecessor, the *N₂ORTH* rocket it is being developed for, and the project's
+HD video. The site presents the project, its flight-proven _South Cube_
+predecessor, the _N₂ORTH_ rocket it is being developed for, and the project's
 supporters.
 
 ## Tech stack
@@ -67,7 +67,7 @@ images at ~2560px:
 
 ```sh
 # other images
-mogrify -auto-orient -strip -resize '2560x2560>' 
+mogrify -auto-orient -strip -resize '2560x2560>'
 ```
 
 - `-auto-orient` rotates the pixels to match the photo's EXIF orientation —
