@@ -38,18 +38,26 @@
 
         packages.default = package;
 
-        # OCI image for the server. Build with `nix build .#container`,
-        # then `docker load < result` (or push to a registry). The bun server
-        # listens on $PORT (default 3000);
-        packages.container = pkgs.dockerTools.buildLayeredImage {
+        # OCI image for the server.
+        packages.container =
+        let
           name = "south-website";
           tag = "latest";
+          port = "3000";
+        in
+        pkgs.dockerTools.buildLayeredImage {
+          inherit name;
+          inherit tag;
+
+          # Defaults to "scratch" image
+          fromImage = null;
+
           # `bun run start` spawns /bin/sh to run the package.json script.
           contents = [ pkgs.dockerTools.binSh ];
           config = {
-            Cmd = [ (lib.getExe package) ];
-            Env = [ "PORT=3000" ];
-            ExposedPorts = { "3000/tcp" = { }; };
+            Entrypoint = [ (lib.getExe package) ];
+            Env = [ "PORT=${port}" ];
+            ExposedPorts = { "${port}/tcp" = { }; };
           };
         };
       }

@@ -24,7 +24,7 @@
     align-items: center;
   }
   .horizontal-flex {
-    gap: 1rem;
+    gap: 2rem;
   }
   .logo {
     width: 4rem;

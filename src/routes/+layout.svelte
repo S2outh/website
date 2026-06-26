@@ -33,7 +33,7 @@
   .mobile-nav {
     display: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 865px) {
     .desktop-nav {
       display: none;
     }
