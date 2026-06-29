@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="title-div">
-  <h1 class="title">South Cube</h1>
+  <h1>South Cube</h1>
 </div>
 
 <div class="content-div">

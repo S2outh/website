@@ -7,11 +7,11 @@
 </svelte:head>
 
 <div class="title-div">
-  <h1 class="title">Supporters</h1>
+  <h1>Supporters</h1>
 </div>
 
 <div class="content-div">
-  <h2>This project is only possible due to support from these organizations:</h2>
+  <h3>This project is only possible due to support from these organizations:</h3>
   <div class="logo-grid">
     <enhanced:img src="$lib/assets/supporters/aisler_logo.png" class="logo" alt="aisler logo" />
     <enhanced:img
@@ -40,7 +40,7 @@
     border-radius: 1rem;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     align-items: center;
     gap: 4rem;
   }

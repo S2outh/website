@@ -100,8 +100,28 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  font-size: 200%;
   color: var(--color-heading);
+}
+
+/* 200% of each heading's usual size, preserving the default size hierarchy
+   (browser defaults: h1 200%, h2 150%, h3 117%, h4 100%, h5 83%, h6 67%). */
+h1 {
+  font-size: 300%;
+}
+h2 {
+  font-size: 234%;
+}
+h3 {
+  font-size: 200%;
+}
+h4 {
+  font-size: 166%;
+}
+h5 {
+  font-size: 134%;
+}
+h6 {
+  font-size: 100%;
 }
 
 /* Animated-underline links, used site-wide.
@@ -137,10 +157,6 @@ a:focus-visible {
   height: 100%;
   margin: auto;
   justify-content: center;
-}
-
-.title {
-  font-size: 300%;
 }
 
 .image {
