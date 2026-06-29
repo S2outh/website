@@ -40,7 +40,8 @@
   .container {
     width: min(40rem, 90%);
     height: 100%;
-    margin: 3rem auto;
+    margin: 0 auto;
+    padding: 4rem 0;
     text-align: center;
     justify-content: center;
   }

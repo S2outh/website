@@ -75,11 +75,12 @@ html,
 body {
   /* Solid fallback fills any strip revealed when the mobile browser
      toolbar collapses, so no white shows before the fixed gradient
-     repaints. */
+     repaints. also remove default margin */
   background-color: var(--color-bg-fallback);
   background-image: var(--gradient-bg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 p {

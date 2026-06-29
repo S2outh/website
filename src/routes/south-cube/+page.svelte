@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>South Cube — S²OUTH</title>
+  <title>S²OUTH — South Cube</title>
   <meta
     name="description"
     content="South Cube, a preliminary S²OUTH telemetry payload, flew on the ASTG Ispida rocket at EUROC 2025, reaching 9.4 km apogee and validating key systems in real-world conditions."

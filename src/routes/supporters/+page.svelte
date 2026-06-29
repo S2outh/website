@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Supporters — S²OUTH</title>
+  <title>S²OUTH — Supporters</title>
   <meta
     name="description"
     content="The organizations whose support makes the S²OUTH telemetry project possible."

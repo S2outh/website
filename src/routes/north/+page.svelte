@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>N₂ORTH — S²OUTH</title>
+  <title>S²OUTH — N₂ORTH</title>
   <meta
     name="description"
     content="N₂ORTH is a student-built hybrid rocket by HyEnD Stuttgart, aiming for up to 150 km apogee and carrying the S²OUTH telemetry system."

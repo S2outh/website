@@ -20,9 +20,7 @@
   </MobileNavBar>
 </div>
 
-<div class="main">
-  {@render children()}
-</div>
+{@render children()}
 
 <Footer />
 
@@ -40,9 +38,5 @@
     .mobile-nav {
       display: block;
     }
-  }
-  /* Base styles, design tokens and shared utilities live in src/app.css. */
-  .main {
-    padding: 1.5rem 0;
   }
 </style>

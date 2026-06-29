@@ -19,7 +19,7 @@
   }
   nav {
     height: 4%;
-    padding: 0 4rem;
+    padding: 1rem 4rem;
     display: flex;
     align-items: center;
   }
