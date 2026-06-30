@@ -2,18 +2,28 @@
   import logo from '$lib/assets/wuespace-logo.svg';
   import git from '$lib/assets/footer/git.svg';
   import instagram from '$lib/assets/footer/instagram.svg';
+  import mastodon from '$lib/assets/footer/mastodon.svg';
+  import bluesky from '$lib/assets/footer/bluesky.svg';
+  import linkedin from '$lib/assets/footer/linkedin.svg';
+
+  const external_links = [
+    { src: git, alt: 'git', href: 'https://github.com/S2outh' },
+    { src: instagram, alt: 'instagram', href: 'https://instagram.com/wuespace' },
+    { src: mastodon, alt: 'mastodon', href: 'https://chaos.social/@wuespace' },
+    { src: bluesky, alt: 'bluesky', href: 'https://bsky.app/profile/wuespace.bsky.social' },
+    { src: linkedin, alt: 'linkedin', href: 'https://www.linkedin.com/company/wuespace' }
+  ];
 </script>
 
 <div class="container">
   <hr style:height="0.1rem" />
 
   <div class="external-links">
-    <a href="https://github.com/S2outh">
-      <img src={git} style:width="3rem" alt="git logo" />
-    </a>
-    <a href="https://instagram.com/wuespace">
-      <img src={instagram} style:width="3rem" alt="instagram logo" />
-    </a>
+    {#each external_links as { src, alt, href }}
+      <a {href}>
+        <img {src} {alt} style:width="3rem" />
+      </a>
+    {/each}
   </div>
 
   <hr style:width="80%" style:height="0.1rem" />
