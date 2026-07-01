@@ -56,7 +56,7 @@
     height: 100%;
     margin: 0 auto;
     padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     text-align: center;
     justify-content: center;
   }
