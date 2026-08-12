@@ -24,7 +24,7 @@
     fuel. <em>N₂ORTH</em> already launched twice in April of 2023, reaching an apogee of
     <em>64.4 km</em>. This time we aim for a lot higher, with optimistic estimates going up to
     <em>150 km</em>. Learn more about <em>N₂ORTH</em> on the
-    <a href="https://hyend.de/index.php/dlr-stern-participation/">
+    <a href="https://hyend.de/index.php/2025/11/27/announcing-n2orth-3/">
       <em>official HyEnD website</em>
     </a>.
   </p>
