@@ -1,6 +1,6 @@
 <script lang="ts">
   import { slide } from 'svelte-reduced-motion/transition';
-  import logo from '$lib/assets/south-logo.svg';
+  import logo from '#lib/assets/south-logo.svg';
   let menu_active = $state(false);
   let { children } = $props();
 </script>

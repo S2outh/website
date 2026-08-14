@@ -13,7 +13,7 @@
 <div class="content-div">
   <enhanced:img
     loading="lazy"
-    src="$lib/assets/pictures/south_cube/CubeBP.png"
+    src="#lib/assets/pictures/south_cube/CubeBP.png"
     class="image"
     alt="Blueprint-style technical line drawing of the South Cube telemetry payload"
   />
@@ -26,7 +26,7 @@
   </p>
   <enhanced:img
     loading="lazy"
-    src="$lib/assets/pictures/south_cube/Cube.jpg"
+    src="#lib/assets/pictures/south_cube/Cube.jpg"
     class="image"
     alt="Hand holding the assembled South Cube payload at the EUROC launch site, with competition tents in the background"
   />

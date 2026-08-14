@@ -1,4 +1,4 @@
-import type { Handle } from '@sveltejs/kit';
+import type { Handle } from '@sveltejs/kit/hooks';
 
 export async function handle({ event, resolve }: Parameters<Handle>[0]) {
   return resolve(event, {

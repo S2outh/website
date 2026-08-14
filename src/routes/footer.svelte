@@ -1,10 +1,10 @@
 <script lang="ts">
-  import logo from '$lib/assets/wuespace-logo.svg';
-  import git from '$lib/assets/footer/git.svg';
-  import instagram from '$lib/assets/footer/instagram.svg';
-  import mastodon from '$lib/assets/footer/mastodon.svg';
-  import bluesky from '$lib/assets/footer/bluesky.svg';
-  import linkedin from '$lib/assets/footer/linkedin.svg';
+  import logo from '#lib/assets/wuespace-logo.svg';
+  import git from '#lib/assets/footer/git.svg';
+  import instagram from '#lib/assets/footer/instagram.svg';
+  import mastodon from '#lib/assets/footer/mastodon.svg';
+  import bluesky from '#lib/assets/footer/bluesky.svg';
+  import linkedin from '#lib/assets/footer/linkedin.svg';
 
   const external_links = [
     { src: git, alt: 'git', href: 'https://github.com/S2outh' },

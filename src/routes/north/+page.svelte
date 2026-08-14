@@ -13,7 +13,7 @@
 <div class="content-div">
   <enhanced:img
     loading="lazy"
-    src="$lib/assets/pictures/north/North.jpg"
+    src="#lib/assets/pictures/north/North.jpg"
     class="image"
     alt="The N₂ORTH hybrid rocket resting horizontally on stands outdoors, showing its HyEnD N₂ORTH livery"
   />
