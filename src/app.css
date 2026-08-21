@@ -9,7 +9,7 @@
   --color-bg-start: #1E1E2E;
   --color-bg-end: #182D4A;
   --color-bg-fallback: #182D4A;
-  --gradient-bg: linear-gradient(to bottom right, var(--color-bg-start), var(--color-bg-end));
+  --gradient-bg: linear-gradient(to bottom right in oklab, var(--color-bg-start), var(--color-bg-end));
 
   /* Text */
   --color-text: white;
