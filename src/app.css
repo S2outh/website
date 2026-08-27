@@ -6,10 +6,7 @@
    ============================================================ */
 :root {
   /* Backgrounds */
-  --color-bg-start: #1E1E2E;
-  --color-bg-end: #182D4A;
-  --color-bg-fallback: #182D4A;
-  --gradient-bg: linear-gradient(to bottom right in oklab, var(--color-bg-start), var(--color-bg-end));
+  --color-bg: #1E1E2E;
 
   /* Text */
   --color-text: white;
@@ -76,13 +73,7 @@
    ============================================================ */
 html,
 body {
-  /* Solid fallback fills any strip revealed when the mobile browser
-     toolbar collapses, so no white shows before the fixed gradient
-     repaints. also remove default margin */
-  background-color: var(--color-bg-fallback);
-  background-image: var(--gradient-bg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: var(--color-bg);
   margin: 0;
 }
 
